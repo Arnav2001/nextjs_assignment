@@ -6,9 +6,9 @@ import MainContent from '../components/MainContent';
 import React,{useState} from 'react';
 const Home = () => {
   const [selectedItem, setSelectedItem] = useState<String |null>(null);
-
   const handleDrawerItemClick = (item: string) => {
     setSelectedItem(item);
+    console.log(item);
   };
   return (
     <div className='flex fixed w-screen h-screen'>
@@ -17,7 +17,7 @@ const Home = () => {
       <SideDrawer onItemClick={handleDrawerItemClick} />
       </div>
       <div className='flex-1'>
-        <MainContent/>
+        <MainContent selectedItem={selectedItem}/>
       </div>
     </div>
   );
