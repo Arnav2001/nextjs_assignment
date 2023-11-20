@@ -20,16 +20,16 @@ const ApplicationContent = () => {
     {id:3},
     {id:4},
   ]);
-  
+
   return (
     <div className="w-full h-full overflow-y-auto">
       {/* heading div */}
       <div className="flex items-center pl-4 pr-20 mr-16 pt-2">
-        <div className="max-w-[717px] h-100">
-          <h2 className="mb-2 font-poppins font-semibold text-2xl leading-10">
+        <div className="max-w-[710px] h-100">
+          <h2 className="mb-2 text-customBlue font-semibold text-2xl leading-10">
             Applications
           </h2>
-          <p className="font-poppins font-normal text-base leading-6 text-gray-600 max-w-[717px]">
+          <p className=" font-normal text-base leading-6 text-customGray max-w-[717px]">
             Missing on a Subscription below? You could always manually add
             missing Subscriptions you're looking to manage.
           </p>
@@ -37,7 +37,7 @@ const ApplicationContent = () => {
         <div className="flex-1" />
         <button className="flex items-center bg-white border border-solid border-gray-300 rounded-md text-var(--primary-color) px-4 py-2">
           <DrawerImg imgPath={'/assets/drawer2.png'} width={18} height={18} />
-          <p className='ml-2 font-poppins font-normal text-base leading-6'>
+          <p className='ml-2  font-normal text-base leading-6'>
             Add Application
           </p>
         </button>
@@ -75,10 +75,10 @@ const ApplicationContent = () => {
             </div>
           </div>
           <div className="text-center m-2 flex flex-col">
-      <h1 className="font-poppins font-normal text-base leading-24 text-purple-900">
+      <h1 className=" font-normal text-base leading-24 text-customBlue">
         {item.heading}
       </h1>
-      <p className="font-poppins font-normal text-sm leading-19.5 text-gray-600">
+      <p className=" font-normal text-sm leading-19.5 text-customLightGray">
         {item.subHeading}
       </p>
     </div>

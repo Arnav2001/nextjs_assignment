@@ -23,17 +23,17 @@ const Integrations = ()=>{
           {/* heading div */}
           <div className="flex items-center pl-4 pr-20 mr-16 pt-2">
             <div className="max-w-[717px] h-100">
-              <h2 className="mb-2 font-poppins font-semibold text-2xl leading-10">
+              <h2 className="mb-2 text-customBlue  font-semibold text-2xl leading-10">
               Integrations
               </h2>
-              <p className="font-poppins font-normal text-base leading-6 text-gray-600 max-w-[717px]">
+              <p className=" text-customGray font-normal text-base leading-6 max-w-[717px]">
               Missing your favorite integration? You can request one here.
               </p>
             </div>
           </div>
           {/* Identity and Single Sign on component */}
           <div className="flex flex-row items-center ml-4 mt-6 mb-2">
-          <h1 className="font-poppins font-semibold text-20 leading-30  pr-2">
+          <h1 className=" text-customBlue font-semibold text-20 leading-30  pr-2">
         Identity and Single Sign On
       </h1>
             <DrawerImg imgPath={'/assets/question.png'} width={18} height={18}/>
@@ -46,7 +46,7 @@ const Integrations = ()=>{
           </div>
           <div className="flex flex-col p-4">
             <div className="flex flex-row">
-            <h1 className="font-poppins font-semibold text-18 leading-27">
+            <h1 className=" text-customBlue font-semibold text-18 leading-27">
         {item.heading}
       </h1>
                 <div className=" rounded-md bg-purple-100 flex flex-row ml-2">
@@ -59,14 +59,14 @@ const Integrations = ()=>{
                 </div>
                 </div>
             </div>
-            <p className="font-poppins font-normal text-16 leading-24 text-gray-600">
+            <p className=" text-customLightGray font-normal text-16 leading-24">
         {item.subHeading}
       </p>
           </div>
           <div className="flex-1"></div>
           <div className="pr-4">
-          <button className="flex items-center bg-white border border-solid border-gray-300 rounded-md text-var(--primary-color) px-4 py-2">
-          <p className='ml-2 font-poppins font-normal text-base leading-6'>
+          <button className="flex items-center  border border-solid border-gray-300 rounded-md px-4 py-2" style={{backgroundColor:'#8B3DFF'}}>
+          <p className='ml-2  text-white font-normal text-base leading-6'>
             Connect
           </p>
         </button>
@@ -74,7 +74,7 @@ const Integrations = ()=>{
         </div>
         ))}
         <div className="flex flex-row items-center ml-4 mt-6 mb-3">
-          <h1 className="font-poppins font-semibold text-20 leading-30  pr-2">
+          <h1 className=" text-customBlue font-semibold text-20 leading-30  pr-2">
         Accounting
       </h1>
             <DrawerImg imgPath={'/assets/question.png'} width={18} height={18}/>
@@ -87,7 +87,7 @@ const Integrations = ()=>{
           </div>
           <div className="flex flex-col p-4">
             <div className="flex flex-row">
-            <h1 className="font-poppins font-semibold text-18 leading-27">
+            <h1 className=" text-customBlue font-semibold text-18 leading-27">
         {item.heading}
       </h1>
                 <div className=" rounded-md bg-purple-100 flex flex-row ml-2">
@@ -100,14 +100,14 @@ const Integrations = ()=>{
                 </div>
                 </div>
             </div>
-            <p className="font-poppins font-normal text-16 leading-24 text-gray-600">
+            <p className=" text-customLightGray font-normal text-16 leading-24 ">
         {item.subHeading}
       </p>
           </div>
           <div className="flex-1"></div>
           <div className="pr-4">
-          <button className="flex items-center bg-white border border-solid border-gray-300 rounded-md text-var(--primary-color) px-4 py-2">
-          <p className='ml-2 font-poppins font-normal text-base leading-6'>
+          <button className="flex items-center border border-solid border-gray-300 rounded-md px-4 py-2" style={{backgroundColor:'#8B3DFF'}}>
+          <p className='ml-2  text-white font-normal text-base leading-6'>
             Connect
           </p>
         </button>
@@ -115,7 +115,7 @@ const Integrations = ()=>{
         </div>
         ))}
 <div className="flex flex-row items-center ml-4 mt-6 mb-3">
-          <h1 className="font-poppins font-semibold text-20 leading-30  pr-2">
+          <h1 className=" text-customBlue font-semibold text-20 leading-30  pr-2">
         Engagement
       </h1>
             <DrawerImg imgPath={'/assets/question.png'} width={18} height={18}/>
@@ -128,11 +128,11 @@ const Integrations = ()=>{
           </div>
           <div className="flex flex-col p-4">
             <div className="flex flex-row">
-            <h1 className="font-poppins font-semibold text-18 leading-27">
+            <h1 className=" text-customBlue font-semibold text-18 leading-27">
         {item.heading}
       </h1>
             </div>
-            <p className="font-poppins font-normal text-16 leading-24 text-gray-600">
+            <p className=" text-customLightGray font-normal text-16 leading-24">
         {item.subHeading}
       </p>
           </div>

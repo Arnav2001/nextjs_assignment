@@ -5,7 +5,19 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        customGray:'#3F4C5A',
+        customLightGray:'#6B778C',
+        customBlue:'#19154E',
+      },
+      fontSize: {
+        'base': '16px',
+      },
+      lineHeight: {
+        '69': '24px',
+      },
+    },
   },
   plugins: [],
 }

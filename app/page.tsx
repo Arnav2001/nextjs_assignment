@@ -4,6 +4,7 @@
 import SideDrawer from '../components/SideDrawer';
 import MainContent from '../components/MainContent';
 import React,{useState} from 'react';
+import DrawerImg from '@/components/DrawerImg';
 const Home = () => {
   const [selectedItem, setSelectedItem] = useState<String |null>(null);
   const handleDrawerItemClick = (item: string) => {
@@ -16,7 +17,10 @@ const Home = () => {
       <div>
       <SideDrawer onItemClick={handleDrawerItemClick} />
       </div>
-      <div className='flex-1'>
+      <div className='flex-1 relative'>
+        <div className=' absolute bottom-0 right-0 mr-4 mb-4'>
+      <DrawerImg imgPath={'/assets/floatingBtn.png'} width={64} height={64}/>
+      </div>
         <MainContent selectedItem={selectedItem}/>
       </div>
     </div>
