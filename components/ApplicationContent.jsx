@@ -1,25 +1,9 @@
 import React, { useState } from "react";
 import DrawerImg from "./DrawerImg";
-
+import { applicationItems, dropdownItems } from "../data/data";
 const ApplicationContent = () => {
-  const [items, setItems] = useState([
-    { id: 1, imgUrl: '/assets/zoom.png', dotUrl: '/assets/greendot.png', width: 105, height: 105, heading:'Zoom', subHeading:'Collaboration', color:'#2D8CFF'},
-    { id: 2, imgUrl: '/assets/zendesk.png', dotUrl: '/assets/yellowdot.png', width: 67, height: 67, heading:'Zendesk', subHeading:'Customer Support', color:'#03363D'},
-    { id: 3, imgUrl: '/assets/salesforce.png', dotUrl: '/assets/greendot.png', width: 128, height: 90, heading:'Salesforce', subHeading:'Sales Automation', color:'#00A1E0'},
-    { id: 1, imgUrl: '/assets/office.png', dotUrl: '/assets/pinkdot.png', width: 44, height: 44, heading:'Office 365', subHeading:'Identity Provider', color:'#1D1D1D'},
-    { id: 2, imgUrl: '/assets/jira.png', dotUrl: '/assets/yellowdot.png', width: 95, height: 95, heading:'Jira', subHeading:'Development Tool', color:'#0052CC'},
-    { id: 3, imgUrl: '/assets/notion.png', dotUrl: '/assets/yellowdot.png', width: 117, height: 76, heading:'Notion', subHeading:'Project Management', color:'#000000'},
-    { id: 1, imgUrl: '/assets/invision.png', dotUrl: '/assets/greydot.png', width: 69, height: 69, heading:'Invision', subHeading:'Design Collaboration', color:'#DC395F'},
-    { id: 2, imgUrl: '/assets/figma.png', dotUrl: '/assets/yellowdot.png', width: 136, height: 75, heading:'Figma', subHeading:'Design Collaboration', color:'#1E1E1E'},
-    { id: 3, imgUrl: '/assets/sketch.png', dotUrl: '/assets/greendot.png', width: 105, height: 105, heading:'Sketch', subHeading:'Design Collaboration', color:'#25184A'},
-    // Add more items as needed
-  ]);
-  const [DropDownItems,setDropDownItems] = useState([
-    {id:1},
-    {id:2},
-    {id:3},
-    {id:4},
-  ]);
+  const [items, setItems] = useState(applicationItems);
+  const [DropDownItems,setDropDownItems] = useState(dropdownItems);
 
   return (
     <div className="w-full h-full overflow-y-auto">

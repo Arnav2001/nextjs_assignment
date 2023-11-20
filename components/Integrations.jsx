@@ -1,23 +1,13 @@
 'use client'
 import React, {useState} from "react";
 import DrawerImg from "./DrawerImg";
-
+import { duoImageItems, AccountingItems, EngagementItems } from "../data/data";
+duoImageItems
 const Integrations = ()=>{
 
-    const [DropDownItems,setDropDownItems] = useState([
-        {imgUrl:'/assets/google.png', width:36,height:36, heading:'Google Workshpace', subHeading:'Setup Google Workspace with one-click to work flawlessly with Forescribe'},
-        {imgUrl:'/assets/word.png', width:50,height:50, heading:'Office 365', subHeading:'Setup Office 365 if your organization depends on it as an Identity provider'},
-      ]);
-    const [accountingItems,setAccountingItems] = useState([
-        {imgUrl:'/assets/xero.png', width:44,height:13, heading:'Xero', subHeading:'Gather actionable information for every known Application that persists in your books'},
-        {imgUrl:'/assets/pb.png', width:52,height:52, heading:'Quickbooks', subHeading:'Organize your App spend and gather actionable insights to make informed decisions'},
-        {imgUrl:'/assets/csv.png', width:52,height:52, heading:'CSV', subHeading:'Manually upload your transaction data every month and stay aware of your App spend and usage'},
-    ]);
-    const [engagementItems,setengagementItems] = useState([
-        {color:'#518EF7', imgUrl:'/assets/zoom.png', width:52,height:52, heading:'Zoom', subHeading:'Gather actionable insights off Zoom and stay aware of its user engagement and analyse spend'},
-        {color:'#800080', imgUrl:'/assets/slack.png', width:46,height:46, heading:'Slack', subHeading:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
-        {color:'#0052CC', imgUrl:'/assets/jiramini.png', width:52,height:52, heading:'Jira', subHeading:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
-    ]);
+    const [DropDownItems,setDropDownItems] = useState(duoImageItems);
+    const [accountingItems,setAccountingItems] = useState(AccountingItems);
+    const [engagementItems,setengagementItems] = useState(EngagementItems);
     return (
         <div className="w-full h-full overflow-y-auto pb-10">
           {/* heading div */}

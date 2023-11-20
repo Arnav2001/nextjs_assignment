@@ -3,7 +3,7 @@ import DrawerImg from '../components/DrawerImg';
 import React,{useState} from 'react';
 
 const SideDrawer = ({ onItemClick }) => {
-  const [activeItem, setActiveItem] = useState(null);
+  const [activeItem, setActiveItem] = useState('application');
   const handleItemClick = (item) => {
     onItemClick(item);
     setActiveItem(item);

@@ -2,13 +2,10 @@
 import React, {useState} from "react";
 import DrawerImg from "./DrawerImg";
 import Table from './table';
+import {dropdownItems } from "../data/data";
+
 const Transactions = ()=>{
-    const [DropDownItems,setDropDownItems] = useState([
-        {id:1},
-        {id:2},
-        {id:3},
-        {id:4},
-      ]);
+    const [DropDownItems,setDropDownItems] = useState(dropdownItems);
       
       return (
         <div className="w-full h-full overflow-y-auto">

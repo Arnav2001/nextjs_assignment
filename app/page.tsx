@@ -6,7 +6,7 @@ import MainContent from '../components/MainContent';
 import React,{useState} from 'react';
 import DrawerImg from '@/components/DrawerImg';
 const Home = () => {
-  const [selectedItem, setSelectedItem] = useState<String |null>(null);
+  const [selectedItem, setSelectedItem] = useState<String |null>('application');
   const handleDrawerItemClick = (item: string) => {
     setSelectedItem(item);
     console.log(item);
