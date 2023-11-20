@@ -104,7 +104,7 @@ const Integrations = ()=>{
         </div>
         </div>
         ))}
-<div className="flex flex-row items-center ml-4 mt-6 mb-3">
+<div className="flex flex-row items-center  ml-4 mt-6 mb-3">
           <h1 className=" text-customBlue font-semibold text-20 leading-30  pr-2">
         Engagement
       </h1>
@@ -112,11 +112,11 @@ const Integrations = ()=>{
           </div>
     
         {engagementItems.map((item, index) => (
-          <div key={index} className="rounded-3xl items-center bg-gradient-to-r from-gray-100 via-gray-50 to-white border border-solid border-gray-100 flex flex-row ml-4 mr-32 mt-3">
-            <div className="ml-4 rounded-md" style={{ backgroundColor: item.color }}>
+          <div key={index} className="rounded-3xl cursor-not-allowed items-center bg-gradient-to-r from-gray-100 via-gray-50 to-white border border-solid border-gray-100 flex flex-row ml-4 mr-32 mt-3">
+            <div className="ml-4 opacity-20 rounded-md" style={{ backgroundColor: item.color }}>
           <DrawerImg imgPath={item.imgUrl} width={item.width} height={item.height}/>
           </div>
-          <div className="flex flex-col p-4">
+          <div className="flex opacity-20 flex-col p-4">
             <div className="flex flex-row">
             <h1 className=" text-customBlue font-semibold text-18 leading-27">
         {item.heading}
