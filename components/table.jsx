@@ -7,7 +7,7 @@ const Table = () => {
     const [TransactionItems,setTransactionItems] = useState( transactionItems);
 
   return (
-    <div className=" bg-gray-500 container mt-8 ml-6 mb-10" style={{ maxWidth: '1201px' }}>
+    <div className=" bg-gray-500 container mt-8 ml-6 mr-6 mb-10" style={{ maxWidth: '1201px' }}>
       <table className="w-full bg-white border border-gray-300">
         <thead>
           <tr>
