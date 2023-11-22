@@ -28,8 +28,8 @@ export const applicationItems =[
   ];
 
   export const duoImageItems = [
-    {imgUrl:'/assets/google.png', width:36,height:36, heading:'Google Workshpace', subHeading:'Setup Google Workspace with one-click to work flawlessly with Forescribe'},
-    {imgUrl:'/assets/word.png', width:50,height:50, heading:'Office 365', subHeading:'Setup Office 365 if your organization depends on it as an Identity provider'},
+    {imgUrl:'/assets/google.png', width:52,height:52, heading:'Google Workshpace', subHeading:'Setup Google Workspace with one-click to work flawlessly with Forescribe'},
+    {imgUrl:'/assets/office.svg', width:52,height:52, heading:'Office 365', subHeading:'Setup Office 365 if your organization depends on it as an Identity provider'},
   ]
 
   export const AccountingItems = [

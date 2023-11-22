@@ -21,8 +21,8 @@ const Home = () => {
         <div>
           <SideDrawer onItemClick={handleDrawerItemClick} />
         </div>
-        <div className='flex-1 relative'>
-          <div className='absolute bottom-0 right-0 mr-4 mb-4'>
+        <div className=' relative'>
+          <div className='h-64 w-64 absolute bottom-0 right-0 mr-4 mb-4'>
             <DrawerImg imgPath={'/assets/floatingBtn.png'} width={64} height={64} />
           </div>
           <MainContent selectedItem={selectedItem} />
