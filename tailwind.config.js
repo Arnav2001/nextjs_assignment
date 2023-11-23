@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,12 +14,14 @@ module.exports = {
       },
       fontSize: {
         'base': '16px',
-        '13':'13px'
+        '13':'13px',
+        '12':'12px'
       },
       fontWeight:{
       '400':'400'
       },
       width:{
+        '124':'124px',
         '717' : '717px',
         '204': '204px',
         '600':'600px',
@@ -59,7 +62,9 @@ module.exports = {
         '40':'40px',
         '48':'48px',
         '17':'17px',
-        '50':'50px'
+        '50':'50px',
+        '80':'80px',
+        '30':'30px'
       },
       margin:{
         '23':'23px',
@@ -104,7 +109,11 @@ module.exports = {
         '19.75':'19.75px',
         '23.75':'23.75px',
         '12.75':'12.75px',
-        '24':'24px'
+        '24':'24px',
+        '38':'38px',
+        '37':'37px',
+        '42':'42PX',
+        '491':'491px'
       },
     },
   },

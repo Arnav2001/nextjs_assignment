@@ -11,7 +11,7 @@ const ApplicationContent = () => {
       <div className="flex flex-row w-fit mt-31 ml-219  mb-50 h-100 items-center">
         <div className="flex flex-col w-717  mr-288 ">
           <div className="w-180 h-42 mb-10">
-          <h2 className=" text-customBlue font-semibold text-2xl leading-10">
+          <h2 className=" text-customBlue font-poppin font-semibold text-2xl leading-10">
             Applications
           </h2>
           </div>
@@ -22,7 +22,7 @@ const ApplicationContent = () => {
           </div>
         </div>
 
-        <div className="flex flex-row items-center h-44 w-196 bg-white border border-solid border-gray-300 rounded-5 text-var(--primary-color)">
+        <div className="flex flex-row items-center h-fit w-fit bg-white border border-solid border-gray-300 rounded-5 text-var(--primary-color)">
           <div className="mr-10 ml-20">
           <DrawerImg imgPath={'/assets/selApplications.svg'} width={18} height={18} />
           </div>
@@ -34,15 +34,15 @@ const ApplicationContent = () => {
         </div>
       </div>
       {/* drop down row */}
-      <div className="ml-220 mt-50 w-1201 h-666">
-      <div className="flex flex-wrap items-center ">
+      <div className="ml-220 flex flex-col w-1201 h-666">
+      <div className="flex mt-20 flex-wrap ">
         {DropDownItems.map((item, index) => (
           <div key={index} className="w-129 mr-20 h-44 flex bg-gray-100 rounded-md">
             {/* Content for each item */}
           </div>
         ))}
 
-        <div className="flex ml-495 w-44 h-44 rounded-md bg-purple-100 justify-center items-center">
+        <div className="flex ml-491 w-44 h-44 rounded-md bg-purple-100 justify-center items-center">
           <DrawerImg imgPath={'/assets/reload.png'} width={20} height={18} />
         </div>
         <div className="flex ml-20 w-44 h-44 rounded-md bg-purple-100 justify-center items-center">
