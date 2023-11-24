@@ -25,11 +25,11 @@ const Home = () => {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         />
       </head>
-      <div className='flex w-1920 h-1049'>
+      <div className='flex w-full h-full'>
         <div>
           <SideDrawer onItemClick={handleDrawerItemClick} />
         </div>
-        <div className=' relative'>
+        <div className='w-full relative'>
           <div className='h-64 w-64 absolute bottom-0 right-0 mr-4 mb-4'>
             <DrawerImg imgPath={'/assets/floatingBtn.png'} width={64} height={64} />
           </div>

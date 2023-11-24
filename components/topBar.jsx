@@ -2,14 +2,14 @@ import React from 'react';
 import DrawerImg from './DrawerImg';
 const TopBar = () => {
   return (
-    <div className="bg-white flex h-71 w-1640 items-center border-b border-solid border-gray-200">
+    <div className="bg-white flex h-71 w-full items-center justify-between border-b border-solid border-gray-200">
       {/* Left side: Logo */}
       <div className="ml-23 mt-23 mb-23 mr-33">
       <DrawerImg imgPath={"/assets/backButton.png"} width={24} height={24}/>
       </div>
 
       {/* Center: Search Bar */}
-      <div className="flex items-center h-11 mr-589 w-600 bg-gray-200 rounded-md">
+      <div className="flex items-center h-11 w-600 bg-gray-200 rounded-md">
       <div className=' ml-24.25 mr-10.75'>
       <DrawerImg imgPath={"/assets/search.png"} width={18} height={18}/>
       </div>

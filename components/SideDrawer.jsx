@@ -10,7 +10,7 @@ const SideDrawer = ({ onItemClick }) => {
   };
   const isItemActive = (item) => item === activeItem;
   return (
-    <div className="bg-white h-screen w-280 overflow-y-auto flex flex-col border-r border-solid border-gray-200">
+    <div className="bg-white h-full w-280 overflow-y-auto flex flex-col border-r border-solid border-gray-200">
       {/* Logo at the top center */}
       <div className="flex items-center h-71 w-full justify-center border-b border-solid border-gray-200">
         <div className=' mx-67 my-18'>
@@ -102,7 +102,7 @@ const SideDrawer = ({ onItemClick }) => {
       <div className="flex-1" />
 
       {/* Logo at the bottom */}
-      <div className="flex w-full h-80 mb-70 mt-249 border-solid border-gray-200 border-t">
+      <div className="flex w-full h-fit border-solid border-gray-200 border-t">
         <div className=' flex flex-row my-24 ml-30 mr-12'>
         <DrawerImg imgPath="/assets/bottomLogo.svg" width={32} height={32} />
         </div>
