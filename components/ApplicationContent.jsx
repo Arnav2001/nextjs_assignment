@@ -11,7 +11,7 @@ const ApplicationContent = () => {
       <div className="flex flex-row w-fit mt-31 ml-219  mb-50 h-100 items-center">
         <div className="flex flex-col w-717  mr-288 ">
           <div className="w-180 h-42 mb-10">
-          <h2 className=" text-customBlue font-poppin font-semibold text-2xl leading-10">
+          <h2 className=" text-customBlue font-poppin font-semibold text-28 leading-10">
             Applications
           </h2>
           </div>

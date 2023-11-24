@@ -13,7 +13,7 @@ const SideDrawer = ({ onItemClick }) => {
     <div className="bg-white h-screen w-280 overflow-y-auto flex flex-col border-r border-solid border-gray-200">
       {/* Logo at the top center */}
       <div className="flex items-center h-71 w-full justify-center border-b border-solid border-gray-200">
-        <div className=''>
+        <div className=' mx-67 my-18'>
         <DrawerImg imgPath="/assets/mainLogo.svg" width={146} height={34} />
         </div>
       </div>
@@ -38,7 +38,7 @@ const SideDrawer = ({ onItemClick }) => {
             <div className='ml-19.75 '> <DrawerImg imgPath="/assets/selApplications.svg" width={20.5} height={20.5} /></div> :
             <div className='ml-23.75 '><DrawerImg imgPath="/assets/applications.svg" width={20.5} height={20.5}/></div>}
             <a href="#" className="hover:text-purple-400 ml-12.75 font-poppins text-base" style={{ color: isItemActive('application') ? '#8B3DFF' : '#19154E' }} onClick={() => handleItemClick('application')}>
-              Application
+              Applications
             </a>
             <div className='flex-1'></div>
             <div className='mr-9'>
