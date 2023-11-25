@@ -6,8 +6,6 @@ import SideDrawer from '../components/SideDrawer';
 import MainContent from '../components/MainContent';
 import React, { useState } from 'react';
 import DrawerImg from '@/components/DrawerImg';
-import ResponsiveComponent from '@/components/ResponsiveComponent';
-import Index from '../components/index'; 
 const Home = () => {
   const [selectedItem, setSelectedItem] = useState<String | null>('application');
   const handleDrawerItemClick = (item: string) => {
