@@ -10,7 +10,7 @@ const SideDrawer = ({ onItemClick }) => {
   };
   const isItemActive = (item) => item === activeItem;
   return (
-    <div className="bg-white h-full w-280 overflow-y-auto flex flex-col border-r border-solid border-gray-200">
+    <div className="bg-white relative h-full w-280 overflow-y-auto flex flex-col border-r border-solid border-gray-200">
       {/* Logo at the top center */}
       <div className="flex items-center h-71 w-full justify-center border-b border-solid border-gray-200">
         <div className=' mx-67 my-18'>
@@ -19,19 +19,19 @@ const SideDrawer = ({ onItemClick }) => {
       </div>
 
       {/* Insights section */}
-
-      <div className="flex flex-col  mr-10">
+      <div className='flex flex-col content-start items-start overflow-y-auto h-full'>
+      <div className="flex flex-col mr-10">
         <ul className="mt-39 ml-10 mr-10">
-          <li className="flex rounded mb-25 ml-24.25 items-center">
+          <li className="flex rounded h-50 ml-24.25 items-center">
             <DrawerImg imgPath="/assets/insights.svg" width={20.5} height={20.5} />
             <a href="#" className="hover:text-purple-400 ml-11.25 font-poppins text-customBlue text-base">
               Insights
             </a>
           </li>
         </ul>
-        <h2 className="text-13 ml-34 mb-20 leading-5 font-normal text-gray-600">MENU</h2>
+        <h2 className="text-13 ml-34 mt-25 mb-20 leading-5 font-normal text-gray-600">MENU</h2>
         <ul className="ml-10">
-          <li className="flex  rounded h-50 items-center" style={{backgroundColor: isItemActive('application') ? '#F3E8FF' : ''}}>
+          <li className="flex  rounded h-50 mb-15 items-center" style={{backgroundColor: isItemActive('application') ? '#F3E8FF' : ''}}>
           {isItemActive('application') ?
             <DrawerImg imgPath="/assets/rectangle.svg" width={4} height={30} /> :''}
             {isItemActive('application') ?
@@ -45,7 +45,7 @@ const SideDrawer = ({ onItemClick }) => {
             <DrawerImg imgPath="/assets/selDot.svg" width={8} height={8} />
             </div>
           </li>
-          <li className="flex rounded  w-260 h-50 items-center">
+          <li className="flex rounded mb-15  w-260 h-50 items-center">
             <div className='ml-24 mr-11.25'>
             <DrawerImg imgPath="/assets/renewal.svg" width={21.5} height={19.5} />
             </div>
@@ -53,7 +53,7 @@ const SideDrawer = ({ onItemClick }) => {
               Renewals
             </a>
           </li>
-          <li className="flex h-50 rounded items-center" style={{backgroundColor: isItemActive('transactions') ? '#F3E8FF' : ''}}>
+          <li className="flex h-50 mb-15 rounded items-center" style={{backgroundColor: isItemActive('transactions') ? '#F3E8FF' : ''}}>
           {isItemActive('transactions') ?
             <DrawerImg imgPath="/assets/rectangle.svg" width={4} height={30} /> :''}
             {isItemActive('transactions') ?
@@ -67,7 +67,7 @@ const SideDrawer = ({ onItemClick }) => {
           <li className="flex h-50 rounded items-center">
             <div className='ml-23.75'>
             <DrawerImg imgPath="/assets/employee.svg" width={20.5} height={20.5} /> </div>
-            <a href="#" className="hover:text-purple-400 ml-11.25 text-customBlue font-poppins text-base">
+            <a href="#" className="hover:text-purple-400 ml-11.25 text-customBlue  font-400 font-poppins text-base">
               Employees
             </a>
           </li>
@@ -76,9 +76,9 @@ const SideDrawer = ({ onItemClick }) => {
 
       {/* Settings section */}
       <h2 className="text-13 ml-34 mb-20 mt-25 leading-5 font-normal text-gray-600">SETTINGS</h2>
-      <div className="flex flex-col mx-10">
-        <ul className="">
-        <li className="flex rounded h-50 items-center" style={{backgroundColor: isItemActive('integrations') ? '#F3E8FF' : ''}}>
+      <div className="flex w-full flex-col mx-10">
+        <ul className=" pr-2 mr-10">
+        <li className="flex rounded h-50 mb-15 items-center" style={{backgroundColor: isItemActive('integrations') ? '#F3E8FF' : ''}}>
           {isItemActive('integrations') ?
             <DrawerImg imgPath="/assets/rectangle.svg" width={4} height={30} /> :''}
             {isItemActive('integrations') ?
@@ -99,22 +99,25 @@ const SideDrawer = ({ onItemClick }) => {
         </ul>
       </div>
 
-      <div className="flex-1" />
-
+      </div>
+      
       {/* Logo at the bottom */}
-      <div className="flex w-full h-fit border-solid border-gray-200 border-t">
-        <div className=' flex flex-row my-24 ml-30 mr-12'>
-        <DrawerImg imgPath="/assets/bottomLogo.svg" width={32} height={32} />
+      <div className="flex w-full absolute bottom-0 left-0 h-fit items-center py-2 justify-center border-solid border-gray-200 border-t">
+      <div className='flex justify-center items-center h-fit'>
+        <div className=' flex flex-row ml-30 mr-12'>
+        <DrawerImg imgPath="/assets/bottomLogo.svg" width={40} height={40} />
         </div>
-        <div className="relative  my-15 h-50 w-124 ">
-          <div className='absolute h-30 '>
+        <div className=" flex flex-col">
+          <div className=''>
           <h3 className="text-base  text-customBlue font-400">Webex Starship</h3>
           </div>
-          <div className='absolute top-5 mb-20 h-30 '>
-          <p className="text-12 font-400  text-customGray">charlie@webex.com</p>
+          <div className=''>
+          <p className=" text-12 font-400  text-customGray">charlie@webex.com</p>
           </div>
         </div>
-        <div className='mt-38 mb-37 mr-30 ml-42'>
+        </div>
+        <div className='flex-1'></div>
+        <div className='  mr-30 '>
         <DrawerImg imgPath="/assets/dropBtn.svg" width={10} height={5} />
         </div>
       </div>

@@ -11,6 +11,8 @@ module.exports = {
         customGray:'#3F4C5A',
         customLightGray:'#6B778C',
         customBlue:'#19154E',
+        search:'#F5F5F5',
+        searchtext:'#2C3652'
       },
       fontSize: {
         'base': '1rem',
@@ -66,7 +68,8 @@ module.exports = {
         '17':'1.0625rem',
         '50':'3.125rem',
         '80':'5rem',
-        '30':'1.875rem'
+        '30':'1.875rem',
+        '32':'2rem'
       },
       margin:{
         '23':'1.4375rem',

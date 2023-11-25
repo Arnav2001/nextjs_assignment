@@ -7,7 +7,6 @@ import MainContent from '../components/MainContent';
 import React, { useState } from 'react';
 import DrawerImg from '@/components/DrawerImg';
 import ResponsiveComponent from '@/components/ResponsiveComponent';
-import Head from 'next/head';
 import Index from '../components/index'; 
 const Home = () => {
   const [selectedItem, setSelectedItem] = useState<String | null>('application');
@@ -18,13 +17,6 @@ const Home = () => {
 
   return (
     <>
-      <head>
-        {/* Add the Poppins font link to the Head section */}
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        />
-      </head>
       <div className='flex w-full h-full'>
         <div>
           <SideDrawer onItemClick={handleDrawerItemClick} />

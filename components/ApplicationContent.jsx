@@ -1,23 +1,27 @@
+'use client'
 import React, { useState } from "react";
 import DrawerImg from "./DrawerImg";
 import { applicationItems, dropdownItems } from "../data/data";
+import DropDownMenu from '../components/dropDownMenu'
+
+
 const ApplicationContent = () => {
   const [items, setItems] = useState(applicationItems);
   const [DropDownItems,setDropDownItems] = useState(dropdownItems);
-
+  const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
     <div className="flex flex-col items-center w-full h-full overflow-y-auto">
       {/* heading div */}
       <div className="flex flex-row w-1201 mt-31 justify-between  mb-50 h-100 items-center">
         <div className="flex flex-col w-717 ">
           <div className="w-180 h-42 mb-10">
-          <h2 className=" text-customBlue font-poppin font-semibold text-28 leading-10">
+          <h2 className=" text-customBlue font-semibold text-28 leading-10">
             Applications
           </h2>
           </div>
           <div className=" w-717 h-12 ">
           <p className=" text-base leading-6 font-400 text-customGray">
-            Missing on a Subscription below? You could always manually add missing Subscriptions you're looking to manage.
+            Missing on a Subscription below? You could always manually add missing Subscriptions <br /> you're looking to manage.
           </p>
           </div>
         </div>
@@ -36,12 +40,13 @@ const ApplicationContent = () => {
       {/* drop down row */}
       <div className=" flex flex-col w-1201 h-666">
       <div className="flex mt-20 flex-wrap ">
-        {DropDownItems.map((item, index) => (
-          <div key={index} className="w-129 mr-20 h-44 flex bg-gray-100 rounded-md">
-            {/* Content for each item */}
-          </div>
-        ))}
-
+      {DropDownItems.map((item, index) => (
+        <div key={index} className=" mr-20">
+        <DropDownMenu key={index} />
+        </div>
+      ))}
+              
+        <div className="flex-1"></div>
         <div className="flex w-44 h-44 rounded-md bg-purple-100 justify-center items-center">
           <DrawerImg imgPath={'/assets/reload.png'} width={20} height={18} />
         </div>

@@ -13,4 +13,6 @@
 html, body {
   font-family: 'Poppins', sans-serif; /* Use Poppins as the primary font */
   color: var(--primary-color); /* Set primary text color */
+  font-weight: 400;
+  line-height: 1.5rem;
 }
