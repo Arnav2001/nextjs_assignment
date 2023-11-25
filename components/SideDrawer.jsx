@@ -10,7 +10,7 @@ const SideDrawer = ({ onItemClick }) => {
   };
   const isItemActive = (item) => item === activeItem;
   return (
-    <div className="bg-white relative h-full w-280 overflow-y-auto flex flex-col border-r border-solid border-gray-200">
+    <div className="bg-white relative h-full w-280 flex flex-col border-r border-solid border-gray-200">
       {/* Logo at the top center */}
       <div className="flex items-center h-71 w-full justify-center border-b border-solid border-gray-200">
         <div className=' mx-67 my-18'>
@@ -19,7 +19,7 @@ const SideDrawer = ({ onItemClick }) => {
       </div>
 
       {/* Insights section */}
-      <div className='flex flex-col content-start items-start overflow-y-auto h-full'>
+      <div className='flex flex-col content-start items-start  h-full'>
       <div className="flex flex-col mr-10">
         <ul className="mt-39 ml-10 mr-10">
           <li className="flex rounded h-50 ml-24.25 items-center">

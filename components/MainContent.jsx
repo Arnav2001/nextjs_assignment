@@ -7,7 +7,7 @@ const MainContent = ({selectedItem}) =>{
     return (
         <div className=" flex flex-col h-screen w-full">
             <TopBar/>
-            <div className="flex-1 w-full h-full overflow-y-auto">
+            <div className="flex-1 w-full h-full overflow-y-auto mb-5">
           {selectedItem === 'application' && (
             <Application/>
           )}
